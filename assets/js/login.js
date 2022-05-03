@@ -17,6 +17,11 @@ firebase.initializeApp(firebaseConfig);
 //invokes firebase authentication.
 const auth = firebase.auth();
 
+
+  document.querySelector("#show-register").addEventListener("click", () => {
+	showRegistration();
+  });
+
   const showRegistration = () => {
 	document.querySelector("#registration-page").classList.remove("hide");
 	document.querySelector("#login-page").classList.add("hide");
