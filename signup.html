@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Login </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body class="landing">
+
+  
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+      
+      <!-- TODO: Add SDKs for Firebase products that you want to use-->
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+      
+      <script src="assets/js/login.js"></script>
+
+  <script >
+      // Your web app's Firebase configuration
+  var firebaseConfig = {
+	apiKey: "AIzaSyA9ICpVKd7gBFnX-IBry-TQ4Hk0fIHBzw8",
+	authDomain: "wingram-96d68.firebaseapp.com",
+	databaseURL: "https://wingram-96d68.firebaseio.com",
+	projectId: "wingram-96d68",
+	storageBucket: "wingram-96d68.appspot.com",
+	messagingSenderId: "392784457025",
+	appId: "1:392784457025:web:9239eb47ac46b3de0685c0",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+
+  //invokes firebase authentication.
+  const auth = firebase.auth();
+    </script>
+
+
+  <div id="page-wrapper">
+  <header id="header" class="alt">
+  <h1><a href="index.html">intro to web technology assignment</a></h1>
+  <nav id="nav">
+      <ul>
+      <li class="special">
+      <a href="#menu" class="menuToggle"><span>Menu</span></a>
+      <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li ><a href="signup.html">Sign Up</a></li>
+              <li id=""><a href="login.html">Log In</a></li>
+              </ul>
+      </div>
+      </li>
+      </ul>
+  </nav>
+  </header>
+      <div class="forms-in">
+        
+      <div class="forms-out">
+       <a href="login.html"> <button  id="show-login">Login In</button></a>
+          <h3>Sign Up</h3>
+          Email <br />
+          <input type="email" id="registration-email" /><br />
+          Confirm Email <br />
+          <input
+            type="email"
+            id="registration-reemail"
+            autocomplete="disable"
+          /><br />
+          Password <br />
+          <input type="password" id="registration-password" /><br />
+          <center><button id="register">Sign Up</button></center>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <ul class="icons">
+          <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://web.facebook.com/anidiobi.ezinna" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+          <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+          <li>&copy; 2022</li><li>Design: <a href="#">Ezed Studio</a></li>
+      </ul>
+      </footer>
+      </div>
+      
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+      
+  </body>
+</html>
